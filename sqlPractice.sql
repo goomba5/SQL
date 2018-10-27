@@ -42,3 +42,12 @@ Values ('iOS', 'Murach''s Swift Programming Thing', '31.99');
 
 Insert into Product (Code, Description, ListPrice)
 Values ('cobol', 'Murach''s Cobol Programming Thing', '0.99');
+
+-- Update two columns in the product table
+Update Product
+Set Code = 'linux'
+Where Code = 'cobol';
+
+Update Product
+Set Description = 'Murach''s Linux Programming Book Thing'
+Where Code = 'linux';
