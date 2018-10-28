@@ -1,16 +1,17 @@
+
 DROP DATABASE IF EXISTS SqlBootcampExample;
 CREATE DATABASE SqlBootcampExample;
-use SqlBootcampExample;
-​
+USE SqlBootcampExample;
+
 CREATE TABLE Customer (
-	ID		int 					primary key auto_increment,
+	ID 		int 					not null primary key auto_increment,
 	Name 	varchar(50) 		not null,
 	City 		varchar(50) 		not null,
 	State 	varchar(2) 		not null,
 	Sales 	decimal(18,0) 	not null,
 	Active 	bit 					not null
 );
-​
+
 Insert Customer (Name, City, State, Sales, Active) Values ('Acme, inc.','Jersey City','NJ',14381891,1);
 Insert Customer (Name, City, State, Sales, Active) Values ('Widget Corp','Seattle','WA',97865829,1);
 Insert Customer (Name, City, State, Sales, Active) Values ('123 Warehousing','Los Angeles','CA',77503710,1);
